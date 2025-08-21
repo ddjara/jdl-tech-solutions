@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Management & Support - JDL TECH SOLUTIONS</title>
+    <link rel="stylesheet" href="images/style.css">
+    <script src="images/function.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="images\Company logo.png" alt="JDL TECH SOLUTIONS Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="index.html#services">Our Services <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web-software.html">Web & Software Solutions</a></li>
+                        <li><a href="creative-branding.html">Creative Media & Branding</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing & Online Growth</a></li>
+                        <li><a href="cybersecurity-data.html">Cybersecurity & Data Solutions</a></li>
+                        <li><a href="it-management.html">IT Management & Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="search-toggle">
+                    <button onclick="toggleSearch()" class="search-icon-btn">🔍</button>
+                </li>
+            </ul>
+            <div id="searchContainer" class="search-container hidden">
+                <input type="text" id="searchInput" placeholder="Search..." onkeypress="handleSearch(event)">
+                <button onclick="performSearch()" class="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Service Hero Section -->
+        <section class="service-hero">
+            <img src="images/IT Management and support.jpg" alt="IT Management & Support" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+        </section>
+
+        <!-- Service Details Section -->
+        <section class="service-details">
+            <div class="container">
+                <div class="service-overview">
+                    <h1>IT Management & Support</h1>
+                    <p><em>Keep Your Technology Running Smoothly</em></p>
+                    <h2>Focus on Your Business While We Handle Your Technology</h2>
+                    <p>Technology should empower your business, not hold it back. When your systems are down, your productivity stops, your customers are frustrated, and your revenue suffers. But managing complex IT infrastructure requires specialized knowledge, constant attention, and significant resources that most businesses can't afford to maintain in-house.</p>
+                    <p>At JDL TECH SOLUTIONS, we become your dedicated IT department, providing comprehensive management and support services that keep your technology running smoothly, securely, and efficiently. Our proactive approach prevents problems before they occur, while our rapid response capabilities ensure minimal downtime when issues do arise.</p>
+                </div>
+
+                <div class="service-offerings">
+                    <h2>Complete IT Infrastructure Management</h2>
+                    
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/24 hour Support.jpg" alt="24/7 Technical Support & Monitoring">
+                            </div>
+                            <div class="feature-content">
+                                <h3>24/7 Technical Support & Monitoring</h3>
+                                <p>Your business doesn't stop at 5 PM, and neither do we. Our round-the-clock support ensures your systems are always monitored, maintained, and ready to serve your business needs.</p>
+                                <ul>
+                                    <li><strong>Proactive Monitoring:</strong> Continuous monitoring of your systems to identify and resolve issues before they impact your business</li>
+                                    <li><strong>Remote Support:</strong> Instant remote access to diagnose and fix problems without disrupting your workflow</li>
+                                    <li><strong>Help Desk Services:</strong> Dedicated support team available via phone, email, or chat to assist your employees with technical issues</li>
+                                    <li><strong>Emergency Response:</strong> Rapid response protocols for critical system failures to minimize downtime and business impact</li>
+                                    <li><strong>Performance Optimization:</strong> Continuous tuning and optimization to ensure your systems run at peak performance</li>
+                                    <li><strong>User Support:</strong> Training and support for your employees to maximize productivity and minimize technical difficulties</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/IT Strategy and Consulting.jpg" alt="Infrastructure Management & Cloud Services">
+                            </div>
+                            <div class="feature-content">
+                                <h3>Infrastructure Management & Cloud Services</h3>
+                                <p>Build and maintain a robust, scalable IT infrastructure that grows with your business and adapts to changing needs.</p>
+                                <ul>
+                                    <li><strong>Server Management:</strong> Complete server setup, configuration, maintenance, and optimization for maximum performance and reliability</li>
+                                    <li><strong>Network Administration:</strong> Design, implementation, and management of secure, high-performance networks</li>
+                                    <li><strong>Cloud Migration & Management:</strong> Seamless transition to cloud platforms and ongoing cloud infrastructure management</li>
+                                    <li><strong>Hybrid Solutions:</strong> Integration of on-premises and cloud resources for optimal performance and cost-effectiveness</li>
+                                    <li><strong>Scalability Planning:</strong> Infrastructure design that scales efficiently as your business grows</li>
+                                    <li><strong>Vendor Management:</strong> Coordination with technology vendors to ensure optimal service and support</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/Cybersecurity.jpg" alt="Security & Compliance Management">
+                            </div>
+                            <div class="feature-content">
+                                <h3>Security & Compliance Management</h3>
+                                <p>Protect your business with comprehensive security measures and ensure compliance with industry regulations and standards.</p>
+                                <ul>
+                                    <li><strong>Security Monitoring:</strong> Continuous monitoring for security threats and vulnerabilities across your entire IT infrastructure</li>
+                                    <li><strong>Patch Management:</strong> Regular security updates and patches to keep your systems protected against the latest threats</li>
+                                    <li><strong>Access Control:</strong> Implementation and management of user access controls to ensure data security and compliance</li>
+                                    <li><strong>Compliance Support:</strong> Assistance with regulatory compliance requirements specific to your industry</li>
+                                    <li><strong>Security Training:</strong> Employee education programs to prevent security breaches and promote best practices</li>
+                                    <li><strong>Incident Response:</strong> Rapid response and recovery procedures for security incidents and breaches</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/Data Analytics.jpg" alt="Backup & Disaster Recovery">
+                            </div>
+                            <div class="feature-content">
+                                <h3>Backup & Disaster Recovery</h3>
+                                <p>Protect your business data and ensure business continuity with comprehensive backup and disaster recovery solutions.</p>
+                                <ul>
+                                    <li><strong>Automated Backups:</strong> Regular, automated backups of all critical business data and systems</li>
+                                    <li><strong>Disaster Recovery Planning:</strong> Comprehensive plans and procedures to restore operations quickly after disasters</li>
+                                    <li><strong>Business Continuity:</strong> Solutions to keep your business running even during system outages or disasters</li>
+                                    <li><strong>Data Recovery:</strong> Expert data recovery services to restore lost or corrupted files and databases</li>
+                                    <li><strong>Testing & Validation:</strong> Regular testing of backup and recovery procedures to ensure they work when needed</li>
+                                    <li><strong>Cloud Backup Solutions:</strong> Secure, off-site backup storage for additional protection and accessibility</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/Modern Business.jpg" alt="Strategic IT Consulting & Planning">
+                            </div>
+                            <div class="feature-content">
+                                <h3>Strategic IT Consulting & Planning</h3>
+                                <p>Align your technology strategy with your business goals through expert consulting and strategic planning services.</p>
+                                <ul>
+                                    <li><strong>Technology Strategy:</strong> Development of comprehensive IT strategies that support your business objectives and growth plans</li>
+                                    <li><strong>System Integration:</strong> Seamless integration of new technologies with existing systems for improved efficiency</li>
+                                    <li><strong>Cost Optimization:</strong> Analysis and optimization of IT spending to maximize value and reduce unnecessary costs</li>
+                                    <li><strong>Technology Roadmapping:</strong> Long-term planning for technology upgrades and implementations</li>
+                                    <li><strong>Digital Transformation:</strong> Guidance and support for digital transformation initiatives that modernize your business</li>
+                                    <li><strong>Performance Analysis:</strong> Regular assessment of IT performance and recommendations for improvements</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/Web & Software Solutions.jpg" alt="Software & Application Management">
+                            </div>
+                            <div class="feature-content">
+                                <h3>Software & Application Management</h3>
+                                <p>Ensure all your business applications run smoothly and efficiently with comprehensive software management services.</p>
+                                <ul>
+                                    <li><strong>Software Installation & Configuration:</strong> Professional installation and configuration of business applications and software</li>
+                                    <li><strong>License Management:</strong> Tracking and management of software licenses to ensure compliance and cost optimization</li>
+                                    <li><strong>Application Updates:</strong> Regular updates and maintenance of business applications to ensure optimal performance</li>
+                                    <li><strong>Integration Services:</strong> Integration of different software applications for seamless data flow and improved productivity</li>
+                                    <li><strong>Custom Application Support:</strong> Specialized support for custom-developed applications and business-specific software</li>
+                                    <li><strong>Performance Monitoring:</strong> Continuous monitoring of application performance and optimization for better user experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="cta-section">
+                    <h3>Ready to Keep Your Technology Running Smoothly?</h3>
+                    <p>Let us manage your IT infrastructure so you can focus on what matters most - your business.</p>
+                    <a href="index.html#consultation-form" class="cta-btn">Get Free Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#consultation">Free Consultation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="web-software.html">Web & Software Solutions</a></li>
+                    <li><a href="creative-branding.html">Creative Media & Branding</a></li>
+                    <li><a href="digital-marketing.html">Digital Marketing & Online Growth</a></li>
+                    <li><a href="cybersecurity-data.html">Cybersecurity & Data Solutions</a></li>
+                    <li><a href="it-management.html">IT Management & Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📧 info@jdltechsolutions.com</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>📍 #2 Kwatei Francis Street, Accra, Ghana</li>
+                    <li>🕒 Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JDL TECH SOLUTIONS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/+233256119554" class="whatsapp-float" target="_blank">
+        <img src="images/WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+</body>
+</html>

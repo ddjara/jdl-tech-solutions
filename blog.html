@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - DLAD JIRO LTD</title>
+    <link rel="stylesheet" href="images/style.css">
+    <script src="images/function.js" defer></script>
+    <script src="images/chatbot.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="assets\Company logo.png" alt="JDL TECH SOLUTIONS Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="index.html#services">Our Services <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web-software.html">Web & Software Solutions</a></li>
+                        <li><a href="creative-branding.html">Creative Media & Branding</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing & Online Growth</a></li>
+                        <li><a href="cybersecurity-data.html">Cybersecurity & Data Solutions</a></li>
+                        <li><a href="it-management.html">IT Management & Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="search-toggle">
+                    <button onclick="toggleSearch()" class="search-icon-btn">🔍</button>
+                </li>
+            </ul>
+            <div id="searchContainer" class="search-container hidden">
+                <input type="text" id="searchInput" placeholder="Search..." onkeypress="handleSearch(event)">
+                <button onclick="performSearch()" class="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Blog Hero Section -->
+        <section class="blog-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Latest Insights & Updates</h1>
+                <p>Stay informed with the latest trends in technology and digital transformation</p>
+            </div>
+        </section>
+
+        <!-- Blog Articles Section -->
+        <section class="blog-articles">
+            <div class="container">
+                <article class="blog-article">
+                    <h2>The Future of Digital Transformation</h2>
+                    <p class="article-meta">Published on January 15, 2025 | By DLAD JIRO Team</p>
+                    <div class="article-content">
+                        <p>Digital transformation has become more than just a buzzword—it's a necessity for businesses looking to thrive in today's competitive landscape. As we move further into 2025, emerging technologies are reshaping how companies operate, interact with customers, and deliver value.</p>
+                        
+                        <h3>Key Trends Shaping Digital Transformation</h3>
+                        <ul>
+                            <li><strong>Artificial Intelligence Integration:</strong> AI is no longer optional but essential for automating processes and gaining insights from data.</li>
+                            <li><strong>Cloud-First Strategies:</strong> Organizations are prioritizing cloud solutions for scalability and flexibility.</li>
+                            <li><strong>Cybersecurity Focus:</strong> With increased digital adoption comes the need for robust security measures.</li>
+                            <li><strong>Remote Work Technologies:</strong> Hybrid work models require sophisticated collaboration tools.</li>
+                        </ul>
+                        
+                        <p>At DLAD JIRO LTD, we help businesses navigate these changes by providing comprehensive digital transformation strategies tailored to their specific needs. Our approach ensures that technology serves as an enabler rather than a barrier to growth.</p>
+                    </div>
+                </article>
+
+                <article class="blog-article">
+                    <h2>Cybersecurity Best Practices for SMEs</h2>
+                    <p class="article-meta">Published on January 10, 2025 | By DLAD JIRO Team</p>
+                    <div class="article-content">
+                        <p>Small and medium enterprises (SMEs) are increasingly becoming targets for cyber attacks. Despite limited resources, there are essential security measures that every SME should implement to protect their valuable data and maintain customer trust.</p>
+                        
+                        <h3>Essential Security Measures</h3>
+                        <ol>
+                            <li><strong>Multi-Factor Authentication (MFA):</strong> Add an extra layer of security to all business accounts.</li>
+                            <li><strong>Regular Software Updates:</strong> Keep all systems and software up to date with the latest security patches.</li>
+                            <li><strong>Employee Training:</strong> Educate staff about phishing attacks and social engineering tactics.</li>
+                            <li><strong>Data Backup Solutions:</strong> Implement automated backup systems to protect against ransomware.</li>
+                            <li><strong>Network Security:</strong> Use firewalls and secure Wi-Fi networks for business operations.</li>
+                        </ol>
+                        
+                        <p>Our cybersecurity experts at DLAD JIRO LTD can help you assess your current security posture and implement comprehensive protection strategies that fit your budget and business requirements.</p>
+                    </div>
+                </article>
+
+                <article class="blog-article">
+                    <h2>Cloud Migration Strategies</h2>
+                    <p class="article-meta">Published on January 5, 2025 | By DLAD JIRO Team</p>
+                    <div class="article-content">
+                        <p>Migrating to the cloud is a critical step for businesses looking to improve scalability, reduce costs, and enhance collaboration. However, a successful cloud migration requires careful planning and execution.</p>
+                        
+                        <h3>Steps for Successful Cloud Migration</h3>
+                        <ol>
+                            <li><strong>Assessment and Planning:</strong> Evaluate current infrastructure and define migration goals.</li>
+                            <li><strong>Choose the Right Cloud Model:</strong> Decide between public, private, or hybrid cloud solutions.</li>
+                            <li><strong>Data Migration Strategy:</strong> Plan how to transfer data safely and efficiently.</li>
+                            <li><strong>Security Considerations:</strong> Ensure data protection throughout the migration process.</li>
+                            <li><strong>Testing and Optimization:</strong> Thoroughly test systems before going live.</li>
+                            <li><strong>Training and Support:</strong> Prepare your team for the new cloud environment.</li>
+                        </ol>
+                        
+                        <p>DLAD JIRO LTD specializes in seamless cloud migrations that minimize downtime and maximize the benefits of cloud computing. Our experienced team guides you through every step of the process.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/+233256119554" class="whatsapp-float" target="_blank" rel="noopener">
+        <img src="images/WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#consultation">Free Consultation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="web-software.html">Web & Software Solutions</a></li>
+                    <li><a href="creative-branding.html">Creative Media & Branding</a></li>
+                    <li><a href="digital-marketing.html">Digital Marketing & Online Growth</a></li>
+                    <li><a href="cybersecurity-data.html">Cybersecurity & Data Solutions</a></li>
+                    <li><a href="it-management.html">IT Management & Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📧 info@jdltechsolutions.com</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>📍 #2 Kwatei Francis Street, Accra, Ghana</li>
+                    <li>🕒 Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JDL TECH SOLUTIONS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Virtual Assistant Chat Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header" onclick="toggleChat()">
+            <img src="images/24 hour Support.jpg" alt="JDL Chat">
+            <span>JDL Chat</span>
+            <span id="chatToggle">▲</span>
+        </div>
+        <div id="chatBody" class="chat-body">
+            <div id="chatMessages" class="chat-messages">
+                <div class="bot-message">
+                    <strong>JDL Chat:</strong> Hi! I'm here to help you with information about our services. How can I assist you today?
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleEnter(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - JDL TECH SOLUTIONS</title>
+    <link rel="stylesheet" href="images/style.css">
+    <script src="images/function.js" defer></script>
+    <script src="images/chatbot.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">
+            <img src="images\Company logo.png" alt="JDL TECH SOLUTIONS Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="index.html#services">Our Services <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web-software.html">Web & Software Solutions</a></li>
+                        <li><a href="creative-branding.html">Creative Media & Branding</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing & Online Growth</a></li>
+                        <li><a href="cybersecurity-data.html">Cybersecurity & Data Solutions</a></li>
+                        <li><a href="it-management.html">IT Management & Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="search-toggle">
+                    <button onclick="toggleSearch()" class="search-icon-btn">🔍</button>
+                </li>
+            </ul>
+            <div id="searchContainer" class="search-container hidden">
+                <input type="text" id="searchInput" placeholder="Search..." onkeypress="handleSearch(event)">
+                <button onclick="performSearch()" class="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Careers Hero Section -->
+        <section class="service-hero">
+            <img src="images/Modern Business.jpg" alt="Careers at JDL TECH SOLUTIONS" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+        </section>
+
+        <!-- Careers Content Section -->
+        <section class="service-details">
+            <div class="container">
+                <div class="company-intro">
+
+                    
+                    <h1>Join Our Team</h1>
+                    <p><em>Build Your Career with Ghana's Leading IT Solutions Company</em></p>
+                    <h2>Why Work With Us?</h2>
+                    <p>At JDL TECH SOLUTIONS, we believe our people are our greatest asset. We're building a team of passionate, creative, and driven professionals who want to make a real impact in Ghana's technology landscape.</p>
+                    
+                    <p>Join us and be part of a company that's transforming how businesses leverage technology to grow, compete, and succeed in the digital age.</p>
+                    
+                    <h3>What We Offer</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3>Growth Opportunities</h3>
+                            <p>Continuous learning, skill development, and clear career progression paths in a rapidly growing company.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Innovation Culture</h3>
+                            <p>Work with cutting-edge technologies and contribute to innovative solutions that make a difference.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Collaborative Environment</h3>
+                            <p>Join a supportive team where your ideas matter and collaboration drives success.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Meaningful Work</h3>
+                            <p>Help businesses and organizations across Ghana achieve their digital transformation goals.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Learning & Development</h3>
+                            <p>Access to training programs, certifications, and conferences to keep your skills sharp.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Work-Life Balance</h3>
+                            <p>Flexible working arrangements and a culture that values both professional and personal growth.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="careers-positions">
+                    <h2>Current Openings</h2>
+                    <div class="job-listings">
+                        <div class="job-card">
+                            <h3>Senior Full-Stack Developer</h3>
+                            <p class="job-type">Full-time • Accra, Ghana</p>
+                            <p>Lead development of web applications using modern frameworks. 5+ years experience required.</p>
+                            <ul>
+                                <li>React, Node.js, Python expertise</li>
+                                <li>Database design and optimization</li>
+                                <li>Team leadership experience</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job-card">
+                            <h3>Digital Marketing Specialist</h3>
+                            <p class="job-type">Full-time • Accra, Ghana</p>
+                            <p>Drive digital marketing campaigns and online growth strategies for our clients.</p>
+                            <ul>
+                                <li>Google Ads & Facebook Ads certified</li>
+                                <li>SEO and content marketing experience</li>
+                                <li>Analytics and reporting skills</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job-card">
+                            <h3>UI/UX Designer</h3>
+                            <p class="job-type">Full-time • Accra, Ghana</p>
+                            <p>Create exceptional user experiences for web and mobile applications.</p>
+                            <ul>
+                                <li>Figma, Adobe Creative Suite proficiency</li>
+                                <li>User research and testing experience</li>
+                                <li>Portfolio of successful projects</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job-card">
+                            <h3>Cybersecurity Analyst</h3>
+                            <p class="job-type">Full-time • Accra, Ghana</p>
+                            <p>Protect our clients' digital assets and implement security best practices.</p>
+                            <ul>
+                                <li>Security certifications (CISSP, CEH)</li>
+                                <li>Penetration testing experience</li>
+                                <li>Risk assessment and compliance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job-card">
+                            <h3>Business Development Executive</h3>
+                            <p class="job-type">Full-time • Accra, Ghana</p>
+                            <p>Identify new business opportunities and build relationships with potential clients.</p>
+                            <ul>
+                                <li>B2B sales experience in tech industry</li>
+                                <li>Strong communication and presentation skills</li>
+                                <li>Understanding of IT solutions and services</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="job-card">
+                            <h3>Junior Software Developer</h3>
+                            <p class="job-type">Full-time • Accra, Ghana</p>
+                            <p>Start your career in software development with mentorship from senior developers.</p>
+                            <ul>
+                                <li>Computer Science degree or equivalent</li>
+                                <li>Basic programming skills (Python, JavaScript)</li>
+                                <li>Eagerness to learn and grow</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="application-process">
+                    <h2>Application Process</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <h3>1. Submit Application</h3>
+                            <p>Send your CV and cover letter to careers@jdltechsolutions.com</p>
+                        </div>
+                        <div class="step">
+                            <h3>2. Initial Review</h3>
+                            <p>Our HR team will review your application within 5 business days</p>
+                        </div>
+                        <div class="step">
+                            <h3>3. Technical Assessment</h3>
+                            <p>Complete a skills assessment relevant to your role</p>
+                        </div>
+                        <div class="step">
+                            <h3>4. Interview Process</h3>
+                            <p>Meet with our team leads and discuss your fit for the role</p>
+                        </div>
+                        <div class="step">
+                            <h3>5. Welcome Aboard</h3>
+                            <p>Join our team and start your journey with JDL TECH SOLUTIONS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3>Ready to Join Our Team?</h3>
+                    <p>Don't see a position that matches your skills? We're always looking for talented individuals. Send us your CV anyway!</p>
+                    <a href="mailto:careers@jdltechsolutions.com" class="cta-btn">Apply Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="index.html#consultation">Free Consultation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="web-software.html">Web & Software Solutions</a></li>
+                    <li><a href="creative-branding.html">Creative Media & Branding</a></li>
+                    <li><a href="digital-marketing.html">Digital Marketing & Online Growth</a></li>
+                    <li><a href="cybersecurity-data.html">Cybersecurity & Data Solutions</a></li>
+                    <li><a href="it-management.html">IT Management & Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📧 info@jdltechsolutions.com</li>
+                    <li>📞 +233 25 611 9554</li>
+                    <li>📱 WhatsApp: +233 25 611 9554</li>
+                    <li>📍 #2 Kwatei Francis Street, Accra, Ghana</li>
+                    <li>🕒 Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JDL TECH SOLUTIONS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/+233256119554" class="whatsapp-float" target="_blank">
+        <img src="images/WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+    <!-- Virtual Assistant Chat Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header" onclick="toggleChat()">
+            <img src="images/24 hour Support.jpg" alt="JDL Chat">
+            <span>JDL Chat</span>
+            <span id="chatToggle">▲</span>
+        </div>
+        <div id="chatBody" class="chat-body">
+            <div id="chatMessages" class="chat-messages">
+                <div class="bot-message">
+                    <strong>JDL Chat:</strong> Hi! I'm here to help you with information about our services. How can I assist you today?
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your message..." onkeypress="handleEnter(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

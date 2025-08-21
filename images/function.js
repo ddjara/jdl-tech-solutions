@@ -1,0 +1,52 @@
+// JDL TECH SOLUTIONS - Website Functions
+
+// Search functionality
+function toggleSearch() {
+    const searchContainer = document.getElementById('searchContainer');
+    if (searchContainer) {
+        searchContainer.classList.toggle('hidden');
+        if (!searchContainer.classList.contains('hidden')) {
+            document.getElementById('searchInput').focus();
+        }
+    }
+}
+
+function handleSearch(event) {
+    if (event.key === 'Enter') {
+        performSearch();
+    }
+}
+
+function performSearch() {
+    const searchTerm = document.getElementById('searchInput').value;
+    if (searchTerm.trim()) {
+        alert('Search functionality coming soon! You searched for: ' + searchTerm);
+    }
+}
+
+// Smooth scrolling for same-page links
+function smoothScroll(target) {
+    const element = document.querySelector(target);
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+// Initialize everything
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle same-page anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const target = this.getAttribute('href');
+            const element = document.querySelector(target);
+            if (element) {
+                e.preventDefault();
+                smoothScroll(target);
+            }
+        });
+    });
+});
