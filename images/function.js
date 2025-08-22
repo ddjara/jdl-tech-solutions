@@ -2,7 +2,7 @@
 
 // Mobile menu toggle
 function toggleMobileMenu() {
-    const nav = document.getElementById('mainNav');
+    const nav = document.querySelector('.main-nav');
     const toggle = document.querySelector('.mobile-menu-toggle');
     nav.classList.toggle('active');
     toggle.classList.toggle('active');
