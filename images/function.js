@@ -1,5 +1,13 @@
 // JDL TECH SOLUTIONS - Website Functions
 
+// Mobile menu toggle
+function toggleMobileMenu() {
+    const nav = document.getElementById('mainNav');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    nav.classList.toggle('active');
+    toggle.classList.toggle('active');
+}
+
 // Search functionality
 function toggleSearch() {
     const searchContainer = document.getElementById('searchContainer');
