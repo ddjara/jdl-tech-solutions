@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .main-nav li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
     .dropdown-menu {
         position: static;
@@ -1575,6 +1575,7 @@ body:has([class*="blog"]) .site-header {
     }
     
     .whatsapp-float {
+        display: flex !important;
         bottom: 90px;
     }
 }
@@ -1914,7 +1915,8 @@ body:has([class*="blog"]) .site-header {
         transition: all 0.3s ease;
     }
     
-    .dropdown:hover .dropdown-menu {
+    .dropdown:hover .dropdown-menu,
+    .dropdown.active .dropdown-menu {
         opacity: 1;
         visibility: visible;
         display: flex;
