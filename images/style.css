@@ -1463,7 +1463,15 @@ body:has([class*="blog"]) .site-header {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 250px;
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.chat-widget.expanded {
+    width: 200px;
+    height: auto;
     background: white;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -1475,12 +1483,38 @@ body:has([class*="blog"]) .site-header {
     background: linear-gradient(135deg, #6c757d, #5a6268);
     color: white;
     padding: 15px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 50%;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.chat-widget.expanded .chat-header {
+    border-radius: 20px 20px 0 0;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.chat-header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.chat-widget:not(.expanded) .chat-header img {
+    margin-right: 0;
+}
+
+.chat-widget:not(.expanded) .chat-header span {
+    display: none;
 }
 
 .chat-header img {
@@ -1496,6 +1530,10 @@ body:has([class*="blog"]) .site-header {
     max-height: 400px;
     background: white;
     border-radius: 0 0 20px 20px;
+}
+
+.chat-widget.expanded .chat-body {
+    display: block;
 }
 
 .chat-messages {
