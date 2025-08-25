@@ -1470,7 +1470,7 @@ body:has([class*="blog"]) .site-header {
 }
 
 .chat-widget.expanded {
-    width: 200px;
+    width: 250px;
     height: auto;
     background: white;
     border-radius: 20px;
