@@ -1576,7 +1576,8 @@ body:has([class*="blog"]) .site-header {
     
     .whatsapp-float {
         display: flex !important;
-        bottom: 90px;
+        bottom: 20px;
+        right: 90px;
     }
 }
 
